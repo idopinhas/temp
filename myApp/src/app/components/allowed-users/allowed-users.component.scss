@@ -1,0 +1,13 @@
+.allowed-users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        list-style-type: none;
+        li {
+            margin: 15px 0px;
+            font-weight: 500;
+        }
+    }
+}

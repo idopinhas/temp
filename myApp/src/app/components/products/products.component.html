@@ -1,0 +1,24 @@
+<div class="users-container">
+
+  <div class="left-list-users-container">
+    <ul>
+      @for (user of users; track user.id) {
+      <li (click)="userSelected(user)">{{user.name}}</li>
+      }
+    </ul>
+  </div>
+  <div class="right-user-data-container">
+    @if (isUserSelected) {
+    <h4>User data : </h4>
+    <ul>
+      <li>User ID: {{CurrentUserSelected.id}}</li>
+      <li>User company name: {{CurrentUserSelected.company.name}}</li>
+      <li>Email: {{CurrentUserSelected.email}}</li>
+      <li>Phone:: {{CurrentUserSelected.phone}}</li>
+    </ul>
+    <button class="btn" (click)="AddUserToAllows()">Add User</button>
+    } @else {
+    No User Selcted
+    }
+  </div>
+</div>

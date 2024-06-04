@@ -1,0 +1,10 @@
+<section class="allowed-users">
+    <div class="container">
+        <ul>
+            <h4>Allowed Users : </h4>
+            @for (user of allowedUsers; track user.id) {
+                <li>{{user.name}}</li>
+            }
+        </ul>
+    </div>
+</section>

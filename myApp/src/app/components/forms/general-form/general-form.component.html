@@ -1,0 +1,55 @@
+<!-- <section class="tempalte-driven-form">
+    <div class="container">
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="form-container">
+            <h2 class="form-title">Register</h2>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" ngModel required class="form-control">
+                <div *ngIf="form.controls.name?.invalid && form.controls.name?.touched" class="error">
+                    Name is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" ngModel required email class="form-control">
+                <div *ngIf="form.controls.email?.invalid && form.controls.email?.touched" class="error">
+                    Valid email is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" ngModel required minlength="6" type="password"
+                    class="form-control">
+                <div *ngIf="form.controls.password?.invalid && form.controls.password?.touched" class="error">
+                    Password is required (min. 6 characters).
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" ngModel required pattern="[0-9]{10}" class="form-control">
+                <div *ngIf="form.controls.phone?.invalid && form.controls.phone?.touched" class="error">
+                    Valid phone number is required.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" name="age" ngModel required class="form-control">
+                <div *ngIf="form.controls.age?.invalid && form.controls.age?.touched">
+                    Age not illgal
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="temp">Temp</label>
+                <input type="temp" name="temp" ngModel required class="form-control">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</section> -->
